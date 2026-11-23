@@ -1,0 +1,7 @@
+﻿case_id,affected_entity,r_u_if_specified,paper_description
+Base,All stations,6,Base scenario
+Case A,Road towards CS9 in NE3,,Road capacity doubled; other station characteristics unchanged
+Case B,Roads towards CSs in NE1,,Road capacity reduced by one third
+Case C,Roads towards CSs in NE1,,ICEVs sharing roads with EVs increased to same level as NE5
+Case D,CS1 and CS7 in NE4,8,r1 and r7 raised from 6 to 8 EVs per charger per hour
+Case E,Whole study area,,"Future vehicle density scenarios: EV +20%, ICEV +10%; EV +40%, ICEV +15%; EV +60%, ICEV +20%"

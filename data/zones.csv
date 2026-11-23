@@ -1,0 +1,8 @@
+﻿zone_id,ev_population_paper,icev_population_paper,peak_hour_ev_demand_derived,peak_demand_basis
+NE1,67,1349,7,round(10% of EV population); sums to paper N=415
+NE2,268,5362,27,round(10% of EV population); sums to paper N=415
+NE3,1123,22466,112,round(10% of EV population); sums to paper N=415
+NE4,499,9977,50,round(10% of EV population); sums to paper N=415
+NE5,1150,23000,115,round(10% of EV population); sums to paper N=415
+NE6,708,14154,71,round(10% of EV population); sums to paper N=415
+NE7,333,6662,33,round(10% of EV population); sums to paper N=415

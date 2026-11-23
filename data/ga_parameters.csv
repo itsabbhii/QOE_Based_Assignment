@@ -1,0 +1,16 @@
+﻿parameter,value,meaning,unit,source_location,notes
+N,415,EVs needing charging,vehicles,Table V,Paper Table V
+M,10,Number of charging stations,stations,Table V,Paper Table V
+V,8285,"Paper parameter V; appears consistent with 10% of narrative ICEV total 82,850",vehicles,Table V and Section IV-A,Keep separate from sum of zone ICEV counts; see README discrepancy
+eta_u,10,Number of chargers at each charging station,chargers/station,Table V; definition in Section III-F,Paper says CS details include eta_u
+r_u,6,Maximum EVs served per charger per hour,EVs/charger/hour,Table V; equation (8),Case D changes CS1 and CS7 to 8
+Z,7,Number of postcode zones,zones,Table V,NE1 to NE7
+ell,0.2,Parameter ℓ as printed in Table V,not specified,Table V,Do not reinterpret without checking symbol rendering in original typeset PDF
+zeta,1590,Road capacity parameter ζ as printed in Table V,not specified,Table V,Road capacity used in congestion model
+Gamma,120,QoE maximum total completion-time threshold,minutes,Table V; constraint (14),Per-EV travel + queue + charge time must be <= Gamma
+lambda_u,48,Parameter λu as printed in Table V,not specified,Table V,Keep symbol/value; paper's table does not label a unit
+beta,10,GA stopping/convergence threshold β,not specified,Table V; Algorithm 1,Algorithm stops when |B-b(s)| <= β
+ICEV_population_narrative,82850,Personal ICEV population stated in text,vehicles,Section IV-A,Narrative value; differs from sum of Table IV zone ICEV counts
+EV_charging_share_peak,0.1,Assumed share of EV population needing charge at peak hour,fraction,Section IV-A,Used to derive zone peak-hour demand
+ICEV_shared_road_peak,0.1,Assumed share of ICEVs using same roads as EVs per peak hour,fraction,Section IV-A,Paper's congestion assumption
+road_capacity_uniform_assumption,1,Road capacity assumed same across study area in base scenario,boolean,Section IV-A,1=true

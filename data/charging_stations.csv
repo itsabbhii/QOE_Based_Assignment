@@ -1,0 +1,11 @@
+﻿station_id,zone_id,latitude,longitude,chargers_eta_u,evs_per_charger_per_hour_r_u,charging_time_minutes_60_div_r,source_notes
+CS2,NE1,54.9740967,-1.6212623,10,6,10.0,Table IV; base scenario
+CS3,NE1,54.9792671,-1.6098994,10,6,10.0,Table IV; base scenario
+CS4,NE1,54.9749156,-1.595424,10,6,10.0,Table IV; base scenario
+CS6,NE2,54.988027,-1.613854,10,6,10.0,Table IV; base scenario
+CS9,NE3,55.0072571,-1.619521,10,6,10.0,Table IV; base scenario
+CS1,NE4,54.97448,-1.644712,10,6,10.0,Table IV; base scenario; Case D r=8
+CS7,NE4,54.9862673,-1.6594208,10,6,10.0,Table IV; base scenario; Case D r=8
+CS8,NE5,55.0023349,-1.6754294,10,6,10.0,Table IV; base scenario
+CS5,NE6,54.988743,-1.581588,10,6,10.0,Table IV; base scenario
+CS10,NE7,55.009272,-1.57895,10,6,10.0,Table IV; base scenario
