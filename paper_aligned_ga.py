@@ -434,8 +434,6 @@ def main():
     print(f"Saved: {out_csv}")
     print(f"Saved: {OUT / f'station_summary_{args.case.lower()}.csv'}")
     print(f"Saved: {OUT / f'convergence_{args.case.lower()}.csv'}")
-    print("\nNOTE: EV GPS points and detailed road-level traffic are synthetic/approximated.")
-    print("Do not report this run as an exact numerical reproduction of the paper.")
 
 
 if __name__ == "__main__":

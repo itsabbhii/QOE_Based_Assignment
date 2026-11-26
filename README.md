@@ -254,3 +254,34 @@ python paper_aligned_ga.py --case D
 ### 12. Final note
 
 This project is intended for learning, experimentation and further research on QoE-based EV charging-station assignment using Genetic Algorithms. Always disclose the synthetic coordinates and traffic approximations when presenting the results.
+
+---
+
+## 13. Experimental runner: Base and Cases A-D (Figures 6-11)
+
+The additional script `run_experiments.py` implements the first experimental batch and produces paper-structured Figures 6-11:
+
+- Figure 6: mean station-wise EV assignments.
+- Figure 7: mean station-wise sum of travel time.
+- Figure 8: mean station-wise sum of queue time.
+- Figure 9: mean station-wise sum of charging time.
+- Figure 10: mean station-wise sum of total completion time.
+- Figure 11: overall total completion time for Base and Cases A-D.
+
+It runs independent seeds and reports sample standard deviations as error bars. Example:
+
+```bash
+python -m pip install matplotlib
+python run_experiments.py --runs 30 --seed-start 1001 --generations 20 --population 16
+```
+
+The included 30-run results were executed using seeds 1001-1030, population 16 and 20 generations. These settings were selected to complete the multi-run evaluation in the available compute environment; they are lower than the original single-run script defaults (population 32, 100 generations). For a convergence/sensitivity study, increase these settings and rerun. The runner writes its CSV data, metadata and PNG figures to `results/`.
+
+Scenario modelling in the runner:
+
+- A: destination-road capacity factor for NE3 (CS9) is multiplied by 2.
+- B: destination-road capacity factor for NE1 is multiplied by 2/3.
+- C: the NE1 ICEV population input is set equal to the NE5 ICEV population input.
+- D: the existing station loader changes the per-charger rate at CS1 and CS7 from 6 to 8.
+
+**Interpretation warning:** The model retains the source project's synthetic EV coordinates, zone-level traffic approximation and queue-equation approximation (`lambda_u=48`). These outputs are experimental estimates under those assumptions, not the authors' original numerical results. Figures 12-16 (Case E and QoE-versus-Greedy) are not yet included in this milestone.

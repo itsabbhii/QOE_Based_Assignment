@@ -1,0 +1,14 @@
+{
+  "runs": 1,
+  "seeds": [
+    1001
+  ],
+  "population": 12,
+  "generations": 5,
+  "phi": 0.1,
+  "epsilon": 0.1,
+  "coordinate_model": "synthetic jitter around published zone-port anchors",
+  "traffic_model": "zone-level ICEV approximation; not road-segment measurements",
+  "queue_model": "existing project Eq.7 approximation with lambda_u=48",
+  "status": "paper-structured approximation, not exact numerical replication"
+}
